@@ -1,0 +1,139 @@
+.jqueryslidemenu {
+	font: bold 12px Verdana;
+	width: 100%;
+}
+
+
+.jqueryslidemenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-image: url(images/bg_nav.png);
+	background-repeat: no-repeat;
+	z-index: 100000 !important;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a {
+	display: block;
+	/*background: #4080C1;*/
+    color: #fff;
+	padding:0px;
+	text-decoration: none;
+	height:44px;
+	line-height:44px;
+	text-align:center;
+}
+
+.jqueryslidemenu ul li a.b1,.jqueryslidemenu ul li a.b2,.jqueryslidemenu ul li a.b3,.jqueryslidemenu ul li a.b4,.jqueryslidemenu ul li a.b5,.jqueryslidemenu ul li a.b6,.jqueryslidemenu ul li a.b7 {
+	display:block;	
+}
+.jqueryslidemenu ul li a.b1 {
+	width:82px;
+	background-image:url(images/nav_home.png);
+}
+.jqueryslidemenu ul li a.b2 {
+	width:112px;
+	background-image:url(images/nav_services.png);
+}
+.jqueryslidemenu ul li a.b3 {
+	width:245px;	
+	background-image:url(images/nav_worldClassSystemsDesign.png);
+}
+.jqueryslidemenu ul li a.b4 {
+	width:106px;	
+	background-image:url(images/nav_products.png);
+}
+.jqueryslidemenu ul li a.b5 {
+	width:107px;	
+	background-image:url(images/nav_aboutETC.png);
+}
+.jqueryslidemenu ul li a.b6 {
+	width:190px;	
+	background-image:url(images/nav_upgradeYourHome.png);
+}
+.jqueryslidemenu ul li a.b7 {
+	width:158px;	
+	background-image:url(images/nav_clientSupport.png);
+}
+.jqueryslidemenu ul li.last {
+	border-bottom:2px solid #012C54;	
+}
+* html .jqueryslidemenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited {
+	color: white;
+	font-weight: bold;
+}
+
+.jqueryslidemenu ul li a:hover {
+color:#F2E2C3;
+}
+.jqueryslidemenu ul li a.notice {
+	color: #F9DE88 /*#D2E958*/;
+}
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul {
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+	background-image: url(images/bg_subnav.png);
+	background-repeat: repeat;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li {
+	display: list-item;
+	float: none;
+	width:245px;
+	padding:2px 12px;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul {
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a {
+	text-align:left;
+	font: normal 1em Verdana;
+	width: 215px; /*width of sub menus*/
+	margin: 0;
+	border-top-width: 0;
+	height:20px;
+	line-height:20px;
+	border-bottom:solid 1px #92B9DB;
+	padding:5px 0px 9px 15px;
+	display:block;
+}
+.jqueryslidemenu ul li ul li a.last {
+	border:none;
+}
+
+.jqueryslidemenu li li a:hover { /*sub menus hover style*/
+	background-image: url(images/bullet_dropdown.png);
+	background-repeat:no-repeat;
+	background-position:left center;
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass {
+	display:none;
+}
+
+.rightarrowclass {
+ display:none;
+}

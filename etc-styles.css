@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clear {
+	clear:both;	
+}
+a:link, a:visited {
+	color:#fff;
+	text-decoration: none;
+}
+a:hover {
+	color:#F2E2C3;
+}
+a.more {
+	background-image: url(images/bullet_more.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+	padding-left: 20px;
+	height: 15px;
+}
+p.right {
+	text-align: right;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+p.left {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul {
+  margin: 1em 0;
+}
+dl, dt, dd {
+	font-size:1.3em;	
+}
+body {
+	background-color: #012B51;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:62.5%;
+	color: #FFF;
+	text-align:center;
+}
+img {
+	border:0px;	
+}
+
+#home #wrap, #internal #wrap {
+	text-align:left;	
+}
+
+#home #wrap {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	position:relative !important; /* Allows #internal #page to stack above nav menus while #page has negative z-index on IE */
+}
+#home #header, #home #mast, #home #page, #home #footer {
+	width:1000px;
+}
+
+#home #wrap #header {
+	position:relative;
+}
+
+#home #wrap #header h1 {
+	padding-top: 20px;
+	margin: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+#home #wrap #header #miniNav {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index:2;
+}
+#home #wrap #header #miniNav li {
+	float: left;
+}
+#home #wrap #header #miniNav li a {
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+#home #wrap #header #miniNav li a:hover {
+	color:#F2E2C3;
+}
+#home #wrap #header .btn_brochure {
+	position: absolute;
+	right: 240px;
+	top:1px;
+	z-index:1;
+}
+#home #wrap #header .btn_contact {
+	position: absolute;
+	right: 45px;
+	top: 40%;
+}
+#home #wrap #mast .slideshow {
+	height: 421px;
+	width: 1000px;
+	margin: auto;
+	overflow:hidden;
+	position:relative;
+	clear:left;
+}
+#home #wrap #mast .slideshow .slides img {
+	height: 421px;
+	width: 1000px;
+	/*background-color: #036;*/
+}
+#home #wrap #mast .slideshow .controls {
+	width:1000px;
+	height:421px;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none
+}
+#home #wrap #mast .slideshow .nav span.controlLeft, #home #wrap #mast .slideshow .nav span.controlRight { 
+	position: absolute; 
+	top: 50%; 
+	z-index: 1000;
+}
+#home #wrap #mast .slideshow .nav span.controlLeft {
+	left:0;	
+}
+#home #wrap #mast .slideshow .nav span.controlRight {
+	right: 0;
+}
+#home #wrap #mast .slideshow .nav span.controlLeft a.prev, #home #wrap #mast .slideshow .nav span.controlRight a.next {
+	display:block;
+	height:41px;
+	width:41px;
+	margin:0px 5px;
+}
+#home #wrap #mast .slideshow .nav span.controlLeft a.prev {
+	background: url(images/mast/controlLeft.png) no-repeat;	
+}
+#home #wrap #mast .slideshow .nav span.controlRight a.next {
+	background: url(images/mast/controlRight.png) no-repeat;
+}
+
+#home #wrap #mast .predula {
+	background:url(images/bg_predula.png) no-repeat;
+	height:57px;
+	padding-top: 8px;
+}
+#home #wrap #mast .predula .slides {
+	float: left;
+	width:400px;
+	height:57px;
+	padding:0px 20px 0px 0px;
+	margin:0px 0px 0px 20px;
+	overflow:hidden;
+}
+#home #wrap #mast .predula .slides h1 {
+	font-size:1.7em;
+	padding:6px 0px 0px 0px;
+	margin:0px;
+}
+#home #wrap #mast .predula .slides p {
+	font-size:1.1em;
+	padding:0px;
+	margin:0px;
+}
+#home #wrap #mast .predula .nav {
+	padding: 0px;
+	list-style-type: none;
+	float: right;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#home #wrap #mast .predula .nav li {
+	float: left;
+	padding: 3px;
+}
+#home #wrap #mast .predula .nav a { 
+	display: block; 
+}
+#home #wrap #mast .predula .nav a.activeSlide {
+	background-color: #FFF;
+}
+#home #wrap #mast .predula .nav li.activeLI { 
+	border:solid 1px #FFC;
+} 
+#home #wrap #mast .predula .nav a:focus { 
+	outline: none; 
+}
+#home #wrap #mast .predula .nav img { 
+	border: none; 
+	display: block;
+}
+#home #wrap #page {
+	width:100%;
+}
+#home #wrap #page p, #home #wrap #page li, #home #wrap #page li li, #home #wrap #page li li li {
+	font-size: 1.2em;
+}
+#home #wrap #page #content {
+	position: relative;
+	height: 200px;
+	margin-top: 50px;
+}
+
+#home #wrap #page #content .contentBox {
+	width: 230px;
+	float: left;
+	padding: 0px 10px;
+}
+#home #wrap #page #content .contentBox table {
+	margin:0px;
+	padding:0px;
+}
+#home #wrap #page #content .contentBox table td {
+	font-size:1em;
+	padding:0px;
+}
+#home #wrap #page #content .contentBox p.contentDescription {
+	padding:0px;
+	margin:0px;
+}
+#home #wrap #page #content .contentBox .contentTitle {
+	font-size: 1.7em;
+	color: #BCDFFF;
+	margin-top: 0px;
+	padding-top: 0px;
+
+}
+#home #wrap #page #content .contentBox .contentTitle a:link, #home #wrap #page #content .contentBox .contentTitle a:visited {
+	text-decoration:none;	
+	color: #BCDFFF;
+}
+#home #wrap #page #content .contentBox .contentItems {
+	padding-left: 30px;
+}
+#home #wrap #page #content .contentBox .contentItems li {
+	font-size: 1.1em;
+	list-style-type:square;
+}
+#home #wrap #page #videos {
+	padding-top:15px;	
+}
+#home #wrap #page #videos h3 {
+	font-size: 1.5em;
+}
+#home #wrap #page #videos ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#home #wrap #page #videos ul li {
+	float: left;
+	padding-right: 30px;
+}
+#home #wrap #page #videos ul li.last {
+	padding-right: 0px;
+}
+#home #wrap #footer {
+	/*background-image: url(images/hr_footer.png);
+	background-repeat: no-repeat;
+	background-position: left top;*/
+	/*padding-top: 20px; With videos on home page */
+	padding-top: 50px;
+}
+#home #wrap #footer .linkCol {
+	float: left;
+}
+#home #wrap #footer .linkCol {
+	width: 60%;
+}
+#home #wrap #footer .links {
+	float: left;
+	padding-left: 30px;
+	list-style-type: none;
+}
+#home #wrap #footer .links li a {
+	font-size:1.1em;
+}
+#home #wrap #footer .infoCol {
+	float:right;
+	width:35%
+	text-align:right;
+}
+#home #wrap #footer .infoCol img, #home #wrap #footer .infoCol p {
+	float:left;
+}
+#home #wrap #footer .infoCol p {
+	font-size:1em;
+	padding:5px 0px 0px 10px;
+	margin:0px;
+}
